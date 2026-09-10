@@ -1,112 +1,638 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>CodeVault</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="CodeVault is a developer productivity dashboard for tracking DSA practice, projects, progress and achievements.">
+
+    <title>CodeVault | Developer Productivity Dashboard</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1> CodeVault</h1>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-    </nav>
-</header>
+    <!-- =========================
+         Navigation
+    ========================== -->
 
-<section id="home" class="hero">
-    <div>
-        <p class="tag">DEVELOPER PRODUCTIVITY PLATFORM</p>
-        <h2>Build. Track. <span>Improve.</span></h2>
-        <p>
-            A personal dashboard to track coding progress,
-            DSA practice, projects and achievements.
-        </p>
+    <header class="navbar">
+        <div class="container nav-content">
 
-        <button onclick="openDashboard()">Open Dashboard →</button>
-    </div>
+            <a href="#home" class="logo">
+                <span class="logo-mark">&lt;/&gt;</span>
+                <span>CodeVault</span>
+            </a>
 
-    <div class="dashboard-card">
-        <h3>Developer Overview</h3>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#about">About</a>
+            </nav>
 
-        <div class="stats">
+            <a href="#dashboard" class="nav-button">
+                Open Dashboard
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         Hero Section
+    ========================== -->
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        Developer Productivity Platform
+                    </div>
+
+                    <h1>
+                        Build.
+                        <span>Track.</span>
+                        Improve.
+                    </h1>
+
+                    <p class="hero-description">
+                        CodeVault helps developers organize their coding journey,
+                        track DSA practice, manage projects and measure technical
+                        progress from one place.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#dashboard" class="primary-button">
+                            Explore Dashboard
+                        </a>
+
+                        <a href="#features" class="secondary-button">
+                            View Features
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="hero-stat">
+                            <strong>128+</strong>
+                            <span>Problems Solved</span>
+                        </div>
+
+                        <div class="hero-stat">
+                            <strong>21</strong>
+                            <span>Day Streak</span>
+                        </div>
+
+                        <div class="hero-stat">
+                            <strong>8</strong>
+                            <span>Projects</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Dashboard Preview -->
+
+                <div class="dashboard-preview">
+
+                    <div class="preview-header">
+                        <div>
+                            <span class="preview-label">Overview</span>
+                            <h3>Developer Dashboard</h3>
+                        </div>
+
+                        <div class="profile-circle">
+                            YA
+                        </div>
+                    </div>
+
+
+                    <div class="health-card">
+
+                        <div class="health-info">
+                            <span>Productivity Score</span>
+                            <strong>82%</strong>
+                            <small>+12% from last month</small>
+                        </div>
+
+                        <div class="progress-ring">
+                            <div class="ring-inner">
+                                82
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="preview-grid">
+
+                        <div class="mini-card">
+                            <span class="mini-icon">DSA</span>
+                            <strong>128</strong>
+                            <small>Problems Solved</small>
+                        </div>
+
+                        <div class="mini-card">
+                            <span class="mini-icon">PRJ</span>
+                            <strong>08</strong>
+                            <small>Projects</small>
+                        </div>
+
+                        <div class="mini-card">
+                            <span class="mini-icon">STR</span>
+                            <strong>21</strong>
+                            <small>Day Streak</small>
+                        </div>
+
+                        <div class="mini-card">
+                            <span class="mini-icon">ACH</span>
+                            <strong>12</strong>
+                            <small>Achievements</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             Features
+        ========================== -->
+
+        <section id="features" class="features-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">CORE FEATURES</span>
+
+                    <h2>
+                        Everything you need to
+                        <span>track your growth.</span>
+                    </h2>
+
+                    <p>
+                        A centralized workspace designed to make your
+                        development journey more organized and measurable.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-number">01</div>
+
+                        <div class="feature-icon">
+                            DS
+                        </div>
+
+                        <h3>DSA Tracker</h3>
+
+                        <p>
+                            Track solved problems, organize topics and
+                            maintain consistency in your data structures
+                            and algorithms practice.
+                        </p>
+
+                        <div class="feature-list">
+                            <span>Problem tracking</span>
+                            <span>Topic progress</span>
+                            <span>Difficulty analysis</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-number">02</div>
+
+                        <div class="feature-icon">
+                            AN
+                        </div>
+
+                        <h3>Progress Analytics</h3>
+
+                        <p>
+                            Understand your coding progress through
+                            meaningful statistics, streaks and performance
+                            indicators.
+                        </p>
+
+                        <div class="feature-list">
+                            <span>Progress tracking</span>
+                            <span>Weekly statistics</span>
+                            <span>Performance insights</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-number">03</div>
+
+                        <div class="feature-icon">
+                            PM
+                        </div>
+
+                        <h3>Project Manager</h3>
+
+                        <p>
+                            Organize personal and academic projects,
+                            monitor development stages and keep track
+                            of your technical work.
+                        </p>
+
+                        <div class="feature-list">
+                            <span>Project tracking</span>
+                            <span>Technology stack</span>
+                            <span>Project status</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-number">04</div>
+
+                        <div class="feature-icon">
+                            AC
+                        </div>
+
+                        <h3>Achievements</h3>
+
+                        <p>
+                            Stay motivated by recording milestones,
+                            coding streaks and important accomplishments
+                            throughout your journey.
+                        </p>
+
+                        <div class="feature-list">
+                            <span>Milestones</span>
+                            <span>Coding streaks</span>
+                            <span>Achievement history</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Dashboard Section
+        ========================== -->
+
+        <section id="dashboard" class="dashboard-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">DASHBOARD</span>
+
+                    <h2>
+                        Your coding journey,
+                        <span>in one view.</span>
+                    </h2>
+
+                    <p>
+                        A simple overview of the metrics that matter
+                        most to your development progress.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span>Current Progress</span>
+                            <h3>September 2026</h3>
+                        </div>
+
+                        <button class="panel-button" id="refreshButton">
+                            Refresh Data
+                        </button>
+
+                    </div>
+
+
+                    <div class="metrics-grid">
+
+                        <div class="metric">
+                            <span class="metric-label">DSA Problems</span>
+                            <strong id="problemCount">128</strong>
+                            <small>+18 this month</small>
+                        </div>
+
+                        <div class="metric">
+                            <span class="metric-label">Current Streak</span>
+                            <strong id="streakCount">21</strong>
+                            <small>Personal best: 34 days</small>
+                        </div>
+
+                        <div class="metric">
+                            <span class="metric-label">Projects</span>
+                            <strong>08</strong>
+                            <small>3 currently active</small>
+                        </div>
+
+                        <div class="metric">
+                            <span class="metric-label">Achievements</span>
+                            <strong>12</strong>
+                            <small>4 unlocked this month</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-area">
+
+                        <div class="progress-title">
+                            <div>
+                                <span>Weekly Coding Goal</span>
+                                <strong>18 / 25 hours</strong>
+                            </div>
+
+                            <span>72%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 72%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-section">
+
+                        <div class="activity-header">
+                            <h3>Recent Activity</h3>
+                            <span>Last 7 days</span>
+                        </div>
+
+                        <div class="activity-list">
+
+                            <div class="activity-item">
+                                <div class="activity-icon">DS</div>
+                                <div>
+                                    <strong>Completed 3 DSA problems</strong>
+                                    <span>Arrays and Hashing</span>
+                                </div>
+                                <time>Today</time>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon">PR</div>
+                                <div>
+                                    <strong>Updated CodeVault project</strong>
+                                    <span>Frontend development</span>
+                                </div>
+                                <time>Yesterday</time>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon">AC</div>
+                                <div>
+                                    <strong>Achievement unlocked</strong>
+                                    <span>7 day coding streak</span>
+                                </div>
+                                <time>2 days ago</time>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             About Section
+        ========================== -->
+
+        <section id="about" class="about-section">
+
+            <div class="container about-grid">
+
+                <div class="about-content">
+
+                    <span class="section-tag">ABOUT CODEVAULT</span>
+
+                    <h2>
+                        Turn consistent effort
+                        into measurable growth.
+                    </h2>
+
+                    <p>
+                        CodeVault is designed around a simple idea:
+                        developers improve faster when they can clearly
+                        understand what they are working on and how far
+                        they have progressed.
+                    </p>
+
+                    <p>
+                        Instead of keeping DSA practice, projects,
+                        achievements and goals in different places,
+                        CodeVault brings them together into a single
+                        developer-focused workspace.
+                    </p>
+
+                    <div class="about-points">
+
+                        <div>
+                            <strong>01</strong>
+                            <span>Set clear technical goals</span>
+                        </div>
+
+                        <div>
+                            <strong>02</strong>
+                            <span>Track consistent progress</span>
+                        </div>
+
+                        <div>
+                            <strong>03</strong>
+                            <span>Review and improve performance</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="terminal-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-content">
+
+                        <p>
+                            <span class="terminal-green">const</span>
+                            developer =
+                            <span class="terminal-blue">"Yashika"</span>;
+                        </p>
+
+                        <p>
+                            developer.<span class="terminal-yellow">
+                            skills</span> = [
+                        </p>
+
+                        <p class="indent">
+                            <span class="terminal-blue">"Java"</span>,
+                        </p>
+
+                        <p class="indent">
+                            <span class="terminal-blue">"DSA"</span>,
+                        </p>
+
+                        <p class="indent">
+                            <span class="terminal-blue">"Web Development"</span>
+                        </p>
+
+                        <p>];</p>
+
+                        <br>
+
+                        <p>
+                            <span class="terminal-green">while</span>
+                            (learning) {
+                        </p>
+
+                        <p class="indent">
+                            build();
+                        </p>
+
+                        <p class="indent">
+                            practice();
+                        </p>
+
+                        <p class="indent">
+                            improve();
+                        </p>
+
+                        <p>}</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Call To Action
+        ========================== -->
+
+        <section class="cta-section">
+
+            <div class="container cta-content">
+
+                <span class="section-tag">START BUILDING</span>
+
+                <h2>
+                    Your progress deserves
+                    <span>a place to grow.</span>
+                </h2>
+
+                <p>
+                    Track your practice. Build better projects.
+                    Stay consistent.
+                </p>
+
+                <a href="#dashboard" class="primary-button">
+                    View My Dashboard
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
             <div>
-                <strong>128</strong>
-                <small>DSA Solved</small>
+                <a href="#home" class="logo">
+                    <span class="logo-mark">&lt;/&gt;</span>
+                    <span>CodeVault</span>
+                </a>
+
+                <p>
+                    A developer productivity dashboard built
+                    for consistent technical growth.
+                </p>
             </div>
 
-            <div>
-                <strong>08</strong>
-                <small>Projects</small>
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#about">About</a>
+
             </div>
 
-            <div>
-                <strong>21</strong>
-                <small>Day Streak</small>
-            </div>
-
-            <div>
-                <strong>12</strong>
-                <small>Achievements</small>
-            </div>
         </div>
 
-        <div class="progress">
-            <p>Overall Progress <b>82%</b></p>
-            <div class="bar">
-                <div></div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="features">
-    <h2>Everything in One Place</h2>
+        <div class="container footer-bottom">
 
-    <div class="features">
+            <span>
+                © 2026 CodeVault. Built as a developer productivity project.
+            </span>
 
-        <div class="feature">
-            <span></span>
-            <h3>DSA Tracker</h3>
-            <p>Track solved problems and improve consistency.</p>
+            <span>
+                HTML • CSS • JavaScript
+            </span>
+
         </div>
 
-        <div class="feature">
-            <span>📊</span>
-            <h3>Analytics</h3>
-            <p>Understand your coding progress with useful metrics.</p>
-        </div>
+    </footer>
 
-        <div class="feature">
-            <span>🚀</span>
-            <h3>Projects</h3>
-            <p>Manage projects and showcase your development journey.</p>
-        </div>
 
-        <div class="feature">
-            <span>🏆</span>
-            <h3>Achievements</h3>
-            <p>Celebrate milestones and maintain your coding streak.</p>
-        </div>
-
-    </div>
-</section>
-
-<section id="about" class="about">
-    <h2>Why CodeVault?</h2>
-    <p>
-        CodeVault brings coding practice, projects, progress tracking
-        and developer growth into one simple platform.
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 CodeVault | Built for Developers 🚀</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
