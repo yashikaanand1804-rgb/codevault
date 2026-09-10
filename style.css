@@ -336,3 +336,112 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   DSA / PROJECTS / ACHIEVEMENTS
+========================= */
+
+.section {
+    padding: 90px 0;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    color: #777;
+    margin-bottom: 45px;
+    font-size: 17px;
+}
+
+.progress-container {
+    display: grid;
+    gap: 28px;
+    max-width: 900px;
+}
+
+.progress-item {
+    padding: 22px;
+    border-radius: 14px;
+    background: #f7f8fa;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.progress-item .progress-bar {
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-item .progress-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 20px;
+}
+
+.section .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.section .feature-card {
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.section .feature-card h3 {
+    margin: 18px 0 10px;
+}
+
+.section .feature-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.section .feature-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #eef2ff;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section .features {
+        grid-template-columns: 1fr;
+    }
+
+}
