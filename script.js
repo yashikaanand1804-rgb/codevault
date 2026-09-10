@@ -203,3 +203,33 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+// =========================
+// CodeVault Interactions
+// =========================
+
+const refreshButton = document.getElementById("refreshButton");
+
+if (refreshButton) {
+    refreshButton.addEventListener("click", function () {
+
+        const problemCount = document.getElementById("problemCount");
+        const streakCount = document.getElementById("streakCount");
+
+        if (problemCount) {
+            problemCount.textContent =
+                Number(problemCount.textContent) + 1;
+        }
+
+        if (streakCount) {
+            streakCount.textContent =
+                Number(streakCount.textContent) + 1;
+        }
+
+        refreshButton.textContent = "Data Updated";
+
+        setTimeout(function () {
+            refreshButton.textContent = "Refresh Data";
+        }, 2000);
+    });
+}
+
